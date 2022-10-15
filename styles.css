@@ -13,7 +13,8 @@ html {
 }
 
 .center {
-    height: 80%;
+    position: relative;
+    height: auto;
     width: 90%;
     background-color: hsl(216, 50%, 16%);
     border: 1px solid hsl(216, 50%, 16%);
@@ -78,4 +79,58 @@ html {
 .line {
     border: 0.5px solid hsl(215, 32%, 27%);
     margin-top: 6%;
+}
+
+.user-area {
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-area img {
+    height: auto;
+    width: 12%;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.span-credit {
+    padding-left: 5%;
+    color: hsl(215, 32%, 27%);
+}
+
+.span-name {
+    color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 376px) {
+    .center {
+        height: auto;
+        width: 250px;
+    }
+}
+
+@media (max-width: 226px) {
+    .crypto-row {
+        display: block;
+    }
+
+    .crypto-entity {
+        margin-left: 1%;
+    }
+
+    .expiration {
+        margin-top: 5%;
+    }
+
+    .user-area {
+        padding-left: 10%;
+        padding-bottom: 10%;
+    }
+
+    .center {
+        height: auto;
+    }
 }
