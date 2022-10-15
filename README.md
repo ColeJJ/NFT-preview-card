@@ -6,7 +6,6 @@ NFT preview card component solution
   - [The challenge](#the-challenge)
   - [Links](#links)
 - [Built with](#built-with)
-- [Author](#author)
 
 ## Overview
 
@@ -19,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://colejj.github.io/NFT-preview-card/)
 
 ## Built with
 
