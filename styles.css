@@ -22,16 +22,32 @@ html {
     overflow: hidden;
 }
 
+/* top area */
+
 .image-container {
+    position: relative;
     display: flex;
     justify-content: center;
     padding-top: 5%;
 }
 
-.image-container img {
+.image-crypto {
+    position: relative;
     height: auto;
     width: 85%;
     border-radius: 8px;
+}
+
+.image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+}
+
+.icon-container {
+    display: none;
 }
 
 .content-container {
@@ -39,6 +55,8 @@ html {
     padding-top: 10%;
     max-width: 85%;
 }
+
+/* bottom area */
 
 .content-container span {
     display: block;
@@ -105,6 +123,8 @@ html {
     color: hsl(0, 0%, 100%);
 }
 
+/* media queries */
+
 @media (min-width: 376px) {
     .center {
         height: auto;
@@ -133,4 +153,18 @@ html {
     .center {
         height: auto;
     }
+}
+
+/* hovers  */
+
+.image-container:hover {
+    opacity: 0.8;
+}
+
+.image-container:hover .icon-container {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
